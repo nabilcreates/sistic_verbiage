@@ -1,4 +1,5 @@
 var e = document.getElementById("collection_method_dropdown");
+var labels = document.getElementsByTagName("label");
 var strUser = e.options[e.selectedIndex].value;
 let select_values = ["AA", "VC", "E-ticket", "Mail", "Courier"]
 let text_ending = [
@@ -12,6 +13,16 @@ let text_ending = [
 
     `Someone from my office will be contacting you by phone within 1 business day to confirm the ticket delivery arrangement`,
 ]
+
+for(let i = 0; i < labels.length; i++){
+    let element = labels[i]
+    let innerText = labels[i].innerHTML;
+
+    if(innerText.includes("*")){
+        element.style.background = "yellow"
+        element.style.color = "black"
+    }
+}
 
 setTextValue(e.value)
 
