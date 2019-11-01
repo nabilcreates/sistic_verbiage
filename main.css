@@ -15,14 +15,15 @@ body{
 }
 
 input{
-    width: 100%;
-    height: 100%;
+    margin: auto;
     vertical-align: middle;
 }
 
 .checkbox_section{
+    padding: 5px;
     display: grid;
     grid-template-columns: 10% 90%;
+    column-gap: 10px;
 }
 
 .section:nth-of-type(2n){
