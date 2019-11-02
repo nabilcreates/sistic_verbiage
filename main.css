@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Code:400,500&display=swap');
 
 body{
-    width: 70%;
-    padding: 0;
+    padding: 3rem 25rem;
     margin: auto;
     font-family: 'Fira Code', monospace;
     background: black;
